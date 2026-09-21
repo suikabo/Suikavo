@@ -204,8 +204,6 @@ img {
 .event-section {
   position:relative;
   background:linear-gradient(135deg,#f8faff,#fff 45%,#f7f3ff);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line)
 }
 
 .section-top {
@@ -324,6 +322,7 @@ img {
 }
 
 .works {
+  border-top:1px solid var(--line);
   padding-bottom:120px
 }
 
@@ -774,6 +773,11 @@ section[id] {
 
 }
 
+
+
+.event-section > .wrap {
+  border-top:1px solid var(--line);
+}
 
 /* Mobile: show only the first hero image */
 @media (max-width:760px) {
