@@ -803,3 +803,115 @@ section[id] {
     padding-top:56px;
   }
 }
+
+/* Group Benefit Page */
+.download-page{background:linear-gradient(180deg,#f7f8ff 0,#fff 55%,#f8f6ff 100%)}
+.benefit-main{padding-top:86px}
+.benefit-hero{padding-top:70px;padding-bottom:90px}
+.benefit-label{display:inline-block;margin-bottom:26px;padding:8px 13px;border:1px solid var(--line);background:rgba(255,255,255,.82);font-size:11px;font-weight:700;letter-spacing:.12em}
+.benefit-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);align-items:center;gap:clamp(38px,6vw,90px)}
+.benefit-visual{min-height:540px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 48%,rgba(157,123,255,.15),transparent 36%),linear-gradient(135deg,#fff,#f2f5ff);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.benefit-visual img{display:block;width:100%;height:auto;object-fit:contain}
+.benefit-kicker{display:block;margin-bottom:20px;color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.14em}
+.benefit-copy h1{margin:0;font-size:clamp(36px,4.6vw,66px);line-height:1.18;letter-spacing:.02em}
+.benefit-limited{margin:22px 0 34px;font-size:14px;font-weight:700;letter-spacing:.08em}
+.benefit-download{display:flex;align-items:center;justify-content:space-between;gap:28px;width:min(100%,420px);padding:20px 24px;background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff;box-shadow:0 14px 34px rgba(83,108,255,.24);transition:transform .2s,box-shadow .2s}
+.benefit-download:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(83,108,255,.3)}
+.benefit-download span{font:500 18px Georgia,serif;letter-spacing:.12em}
+.benefit-download small{font-size:9px;letter-spacing:.08em;opacity:.82}
+.benefit-info{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-top:72px;padding-bottom:110px;border-top:1px solid var(--line)}
+.benefit-info-block .heading h2{font-size:clamp(34px,4vw,52px)}
+.benefit-info-block>p{margin:32px 0 0;line-height:2}
+.benefit-credit{margin:32px 0 0}
+.benefit-credit div{display:grid;grid-template-columns:130px 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
+.benefit-credit dt{font-size:11px;font-weight:700;letter-spacing:.08em}
+.benefit-credit dd{margin:0}
+.benefit-notes{margin-top:28px;font-size:11px;line-height:1.9;color:#68709a}
+.benefit-notes p{margin:4px 0}
+@media(max-width:760px){
+.benefit-main{padding-top:68px}.benefit-hero{padding-top:44px;padding-bottom:64px}.benefit-grid{grid-template-columns:1fr;gap:36px}.benefit-visual{min-height:0}.benefit-copy h1 br{display:none}.benefit-download{width:100%}.benefit-info{grid-template-columns:1fr;gap:58px;padding-top:56px;padding-bottom:76px}.benefit-credit div{grid-template-columns:1fr;gap:6px}}
+
+
+/* Group Benefit Page - layout fix */
+.download-page .benefit-main {
+  padding-top:86px;
+}
+
+.download-page .benefit-hero {
+  padding-top:70px;
+  padding-bottom:90px;
+}
+
+.download-page .benefit-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);
+  align-items:center;
+  gap:clamp(38px,6vw,90px);
+}
+
+.download-page .benefit-visual {
+  width:100%;
+  min-width:0;
+  height:540px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+.download-page .benefit-visual img {
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+.download-page .benefit-copy {
+  min-width:0;
+}
+
+.download-page .benefit-download {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  width:min(100%,420px);
+  padding:20px 24px;
+}
+
+.download-page .benefit-download span,
+.download-page .benefit-download small {
+  display:block;
+}
+
+.download-page .benefit-download small {
+  text-align:right;
+  white-space:nowrap;
+}
+
+@media(max-width:760px) {
+  .download-page .benefit-main {
+    padding-top:68px;
+  }
+
+  .download-page .benefit-hero {
+    padding-top:44px;
+    padding-bottom:64px;
+  }
+
+  .download-page .benefit-grid {
+    grid-template-columns:1fr;
+    gap:36px;
+  }
+
+  .download-page .benefit-visual {
+    height:auto;
+    aspect-ratio:16 / 10;
+  }
+
+  .download-page .benefit-download {
+    width:100%;
+  }
+}
