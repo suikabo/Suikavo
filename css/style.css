@@ -89,6 +89,10 @@ img {
 .site-header:has(.site-share) nav { margin-left:auto }
 
 .site-share {
+  background:transparent;
+  color:inherit;
+  font-family:inherit;
+  cursor:pointer;
   margin-left:clamp(12px,3vw,32px);
   border:1px solid rgba(255,255,255,.6);
   border-radius:999px;

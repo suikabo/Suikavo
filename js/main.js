@@ -4,6 +4,21 @@ menu?.addEventListener('click',()=>{const open=header.classList.toggle('open');m
 document.querySelectorAll('.site-header nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));
 
 
+const copyLink = document.querySelector('.site-share');
+let resetCopyLabel;
+copyLink?.addEventListener('click', async () => {
+  const url = document.querySelector('meta[property="og:url"]').content;
+  const text = [document.title, url].join('\n');
+  try {
+    await navigator.clipboard.writeText(text);
+    copyLink.textContent = 'コピー済み';
+    clearTimeout(resetCopyLabel);
+    resetCopyLabel = setTimeout(() => { copyLink.textContent = 'リンクをコピー'; }, 2000);
+  } catch {
+    window.prompt('サイト名とURLをコピーしてください', text);
+  }
+});
+
 // Hero slider: slide count is read from the HTML automatically.
 (() => {
   const track = document.querySelector('.hero-track');
