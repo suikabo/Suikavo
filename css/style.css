@@ -86,6 +86,23 @@ img {
   border-color:white
 }
 
+.site-header:has(.site-share) nav { margin-left:auto }
+
+.site-share {
+  margin-left:clamp(12px,3vw,32px);
+  border:1px solid rgba(255,255,255,.6);
+  border-radius:999px;
+  padding:8px 13px;
+  font-size:13px;
+  white-space:nowrap
+}
+
+.site-share:hover, .site-share:focus-visible { background:rgba(255,255,255,.18) }
+
+@media(max-width:760px) {
+  .site-share { margin-left:auto; margin-right:8px }
+}
+
 .menu {
   display:none;
   background:rgba(255,255,255,.12);
